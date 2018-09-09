@@ -1,0 +1,46 @@
+body {
+    background: #f5f5fb;
+}
+
+.containerForm {
+    background: #fff;
+    padding: 60px;
+}
+
+.contentLogo {
+    text-align: center;
+}
+
+.contentLogo h1 {
+    color: #0c29d0;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+.contentLogo h5 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.contentMessage {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    text-align: center;
+}
+
+.contentMessage h3 {
+    margin: 15px 50px;
+}
+
+.contentMessage p {
+    margin: 15px 50px;
+}
+
+.contentMessage .fa {
+    margin-top: 50px; 
+    color: #1fe6a8;
+    font-size: 30px;
+    border: 3px solid #1fe6a8;
+    border-radius: 55px;
+    padding: 25px;
+}

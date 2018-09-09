@@ -1,0 +1,24 @@
+/* invalid input #f79682 */
+/* valid input #1fe6a8 */
+/* medium strength #f7bc1c */
+/* text placeholder #eaeaf4 */
+
+.col-form-label {
+    font-weight: 500;
+    color: #909095;
+    margin: 15px 0 5px 0;
+    padding: 0;
+}
+
+.col-form-input {
+    padding: 10px 15px;
+    border-color: #d1d4e2;
+    color: #97989b;
+    border-radius: 0;
+}
+
+.col-form-input::placeholder, .col-form-input:focus {
+    color: #97989b;
+    border-color: #b7b7b7;
+    box-shadow: none;
+}

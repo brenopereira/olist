@@ -1,0 +1,68 @@
+.password-strength-container {
+    position: relative;
+    height: 8px;
+    background: #ddd;
+    margin: 10px auto 10px;
+}
+
+.password-strength-container:before, .password-strength-container:after {
+    content: '';
+    height: inherit;
+    background: transparent;
+    display: block;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 5px 0 5px;
+    position: absolute;
+    width: 0;
+    z-index: 10;
+}
+
+.password-strength-container:before {
+    left: 33%;
+}
+
+.password-strength-container:after {
+    right: 33%;
+}
+
+.password-strength {
+    background: transparent;
+    height: inherit;
+    position: absolute;
+    width: 0;
+    border-radius: inherit;
+    transition: width 0.5s ease-in-out, background 0.25s;
+}
+
+.password-strength[data-score='0'] {
+    background: darkred;
+    width: 20%;
+}
+.password-strength[data-score='1'] {
+    background: orangered;
+    width: 40%;
+}
+
+.password-strength[data-score='2'] {
+    background: orange;
+    width: 60%;
+}
+
+.password-strength-steps {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.password-strength-steps li {
+    padding-left: 1em; 
+    text-indent: -.7em;
+    color: #909095;
+}
+
+.password-strength-steps li::before {
+    content: "• ";
+    color: #1fe6a8;
+    font-size: 25px;
+}
